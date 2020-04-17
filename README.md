@@ -5,7 +5,7 @@
 
 ### 拉取包
 ```
-composer require phper666/hyper-server-command:~1.0.0
+composer require phper666/hyperf-server-command:~1.0.0
 ```
 
 hyperf的启动、重启、停止、监听等命令如下：  
