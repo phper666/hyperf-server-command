@@ -1,7 +1,12 @@
 # hyperf-server-command
-# 注意
+### 注意
 该扩展包完全使用了FanchangWang写的代码，非常感谢FanchangWang，[FanchangWang的github地址](https://github.com/FanchangWang)     
 我是在hyperf1.2的pr查看到的这份代码，应该已经被包含hyperf1.2的命令内了，具体请看该pr[地址](https://github.com/hyperf/hyperf/pull/1053)     
+
+### 拉取包
+```
+composer require phper666/hyper-server-command:~1.0.0
+```
 
 hyperf的启动、重启、停止、监听等命令如下：  
 ```
@@ -15,4 +20,4 @@ hyperf的启动、重启、停止、监听等命令如下：
 //php bin/hyperf.php tmg:restart -c //重启服务并清除 runtime/container 目录
 ```
 
-tmg的前缀是我这边默认加上去的，自行修改
+tmg的前缀是我这边默认加上去的，自行修改 
