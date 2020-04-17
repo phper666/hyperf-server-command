@@ -1,0 +1,29 @@
+{
+  "name": "phper666/hyperf-server-command",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "liyuzhao",
+      "email": "562405704@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "hyperf/command": "~1.1.0"
+  },
+  "require-dev": {
+    "hyperf/di": "~1.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phper666\\HyperfServiceCommand\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Phper666\\HyperfServiceCommand\\ConfigProvider"
+    }
+  }
+}
