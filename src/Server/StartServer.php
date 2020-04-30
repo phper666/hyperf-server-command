@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace TmgFramework\Devtool\Server;
+namespace Phper666\HyperfServiceCommand\Server;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\StdoutLoggerInterface;
@@ -16,8 +16,9 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Hyperf\Command\Annotation\Command as HyperfCommand;
 /**
- * @\Hyperf\Command\Annotation\Command()
+ * @HyperfCommand()
  */
 //php bin/hyperf.php tmg:start -d //启动服务并进入后台模式
 //php bin/hyperf.php tmg:start -c //启动服务并清除 runtime/container 目录
