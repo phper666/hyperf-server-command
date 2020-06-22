@@ -8,18 +8,18 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
-    "hyperf/command": "~1.1.0"
+    "php": ">=7.2"
   },
-  "require-dev": {
-    "hyperf/di": "~1.1.0"
-  },
+  "require-dev": {},
   "autoload": {
     "psr-4": {
       "Phper666\\HyperfServiceCommand\\": "src/"
     },
     "files": [
     ]
+  },
+  "suggest": {
+    "hyperf/command": "required hyperf/command ~2.0.0 OR required hyperf/command ~1.1.0"
   },
   "extra": {
     "hyperf": {
