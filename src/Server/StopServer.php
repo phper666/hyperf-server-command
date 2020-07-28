@@ -32,17 +32,17 @@ class StopServer extends Command
         $pid = file_exists($pidFile) ? intval(file_get_contents($pidFile)) : false;
         if (!$pid) {
             $io->note('swoole server pid is invalid.');
-            return false;
+            return -1;
         }
 
         if (!Process::kill($pid, SIG_DFL)) {
             $io->note('swoole server process does not exist.');
-            return false;
+            return -1;
         }
 
         if (!Process::kill($pid, SIGTERM)) {
             $io->error('swoole server stop error.');
-            return false;
+            return -1;
         }
 
         $io->success('swoole server stop success.');
