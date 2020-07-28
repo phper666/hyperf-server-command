@@ -46,6 +46,7 @@ class StopServer extends Command
         }
 
         $io->success('swoole server stop success.');
+        return 0;
     }
 
 }
